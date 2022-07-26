@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+/**********
+* Variables
+**********/
+$primary: rgb(63, 81, 181);
+$light-primary: rgba(63, 81, 181, 0.6);
+$text: #ffffff;
+$primary-text: #212121;
+$secondary-text: #757575;
+
+/**************************** 
+* Body, titres et paragraphes
+****************************/
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #eee;
+}
+
+h2 {
+    color: $primary;
+    font-size: 2.51rem;
+    margin: 35px 0 25px 0;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+section {
+    padding: 51px 0;
+}
+
+/************* 
+* SCSS imports
+*************/
+@import "partials/_buttons.scss";
+
+@import "partials/_nav.scss";
+
+@import "partials/_introduction.scss";
+
+@import "partials/_skills.scss";
+
+@import "partials/_timeline.scss";
+
+@import "partials/_portfolio.scss";
+
+@import "partials/_contact";
+
+@import "partials/_footer";
+
+/********** 
+* Scrollbar
+***********/
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: $primary;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    h2 {
+        padding-top: 76px;
+    }
+
+    section {
+        padding: 0;
+    }
+}

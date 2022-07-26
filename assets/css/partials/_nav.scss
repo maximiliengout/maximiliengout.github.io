@@ -1,0 +1,21 @@
+#navbarContent {
+    // Stylisation de la navbar
+    .nav-link {
+        border-radius: 10px;
+        color: white;
+        padding: 9px 15px 9px 15px;
+        text-align: center;
+        &:hover {
+            transform: scale(1.12);
+        }
+    }
+    // Change la couleur de l'icône menu en mode responsive
+    .navbar-toggler-icon {
+        background-color: white !important;
+    }
+    // Permet de faire ressortir l'onglet actif
+    .active {
+        background-color: white;
+        color: $primary;
+    }
+}

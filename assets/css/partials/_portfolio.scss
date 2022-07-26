@@ -1,0 +1,136 @@
+/**********
+* Portfolio
+**********/
+
+#portfolio {
+    position: relative;
+
+    .active {
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 8px 30px -7px #c9dff0;
+        margin: 0 20px;
+        padding: 0 10px;
+        border-radius: 20px;
+        border: 0;
+        .card-img-top {
+            border-radius: 10px 10px 2px 2px;
+            margin: 10px auto 0;
+        }
+    }
+
+    .center {
+        opacity: 1;
+        .card {
+            padding-bottom: 20px;
+        }
+    }
+
+    .owl-dots {
+        text-align: center;
+
+        span {
+            position: relative;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: block;
+            background: #fff;
+            border: 2px solid $primary;
+            margin: 0 5px;
+        }
+
+        .active {
+            box-shadow: none;
+
+            span {
+                background: $primary;
+                box-shadow: none;
+                height: 12px;
+                width: 12px;
+                margin-bottom: -1px;
+            }
+        }
+    }
+
+    .owl-stage-outer {
+        padding: 30px 0;
+    }
+
+    .owl-nav {
+        display: none;
+    }
+}
+
+.owl-carousel {
+    .owl-nav button {
+        &.owl-next,
+        &.owl-prev {
+            outline: 0;
+        }
+    }
+
+    button.owl-dot {
+        outline: 0;
+    }
+}
+
+/* 
+* Badges
+*/
+.bg-bootstrap {
+    background-color: #7952b3;
+}
+
+.bg-canva {
+    background-color: #00c4cc;
+}
+
+.bg-color {
+    background-color: $primary;
+}
+
+.bg-css {
+    background-color: #1c6ea4;
+}
+
+.bg-html {
+    background-color: #ce5937;
+}
+
+.bg-jquery {
+    background-color: #0769ad;
+}
+
+.bg-js {
+    background-color: #f7e018;
+}
+
+.bg-twig {
+    background-color: #89a81b;
+}
+
+.bg-symfony {
+    background-color: #000000;
+}
+
+// Modal descriptive de la Manu
+#bgcModal {
+    .modal-header {
+        background-color: $primary;
+        color: $text;
+    }
+    // Remplace les puces avec des losanges
+    li::before {
+        content: "⬪ ";
+        color: $primary;
+        text-align: justify;
+    }
+    ul {
+        list-style: none;
+    }
+}

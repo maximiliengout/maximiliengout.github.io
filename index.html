@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+<head>
+
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="CV Maximilien Gout Développeur Web et Webmobile. Découvrez mon parcours et quelques projets à travers cette page internet crée en HTML, SCSS et Javascript." />
+
+    <!-- Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <title>CV Maximilien Gout - Développeur Web</title>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-color px-3 fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="link" href="#introduction">
+                <h1 class="navbar-brand text-white my-2">
+                    <i class="bi bi-person-circle"></i>
+                    Maximilien Gout - Développeur Web
+                </h1>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list text-white fs-1"></i>
+            </button>
+
+            <div class="navbar-collapse justify-content-end collapse" id="navbarContent">
+                <ul class="navbar-nav me-1 mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#introduction" class="nav-link">Présentation</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li class="nav-item"><a href="#timeline" class="nav-link">Parcours</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Porfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="assets/doc/CV_Maximilien_Gout.pdf" target="_blank" class="nav-link"><i
+                                class="bi bi-filetype-pdf"></i>
+                            CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+
+        <!-- Introduction -->
+        <section class="container-fluid" id="introduction">
+            <h2>Présentation</h2>
+            <div class="row align-items-center h-100">
+
+                <!-- Photo -->
+                <div class="col-md-4 col-12 mx-auto">
+                    <img src="assets/img/Maximilien_Gout_Developpeur_Web.jpg" class="pictureProfile"
+                        alt="Photo Maximilien" class="img-fluid" />
+                </div>
+
+                <div class="col-md-6 col-12 mx-auto p-3 accordion" id="introductionAccordion">
+
+                    <!-- Avant propos -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Avant-Propos
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#introductionAccordion">
+                            <div class="accordion-body text-justify">
+                                <p>Bonjour et bienvenue sur mon CV numérique !</p>
+                                <p>Je vous remercie pour votre visite et pour le temps que vous allez consacrer
+                                    à la découverte de mon parcours.
+                                </p>
+                                <p>Excellente journée et bonne lecture.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Qui suis-je ? -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Qui suis-je ?
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#introductionAccordion">
+                            <div class="accordion-body text-justify">
+                                <p>Je me présente, je suis <strong>Maximilien Gout</strong> et je suis originaire de
+                                    l’Oise. Après avoir obtenu un master en environnement, je suis allé travailler
+                                    un an dans le Poitou-Charentes. J’ai ensuite décidé de me réorienter dans le
+                                    domaine de l’informatique en réalisant un service civique puis en devenant
+                                    animateur social numérique (création de poste).</p>
+                                <p>Le confinement m’a permis de me remettre en question et m’a fait m’interroger sur
+                                    mon avenir. J’ai décidé qu’il était temps de prendre un nouveau départ et de me
+                                    lancer un nouveau challenge. J’ai donc négocié une rupture conventionnelle et
+                                    j’ai entamé une reconversion professionnelle en suivant la formation Développeur
+                                    web & web mobile à la Manu à Noyon.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ce qui m’a poussé à devenir développeur Web ? -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Ce qui m’a poussé à devenir développeur Web ?
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#introductionAccordion">
+                            <div class="accordion-body text-justify">
+                                <p>L’<strong>avenir</strong>, à l’heure d’internet, tout se digitalise, le numérique
+                                    est présent partout dans nos vies.</p>
+                                <p>La <strong>découverte</strong>, chaque projet est différent il y a bien entendu
+                                    la partie codage
+                                    mais également la thématique associée. Pour répondre au besoin du client, il
+                                    faut comprendre l’univers dans lequel il gravite, ce qui donne naissance à de
+                                    nouvelles connaissances. </p>
+                                <p>La <strong>résolution des casse-têtes</strong>, trouver la solution à un problème
+                                    complexe, quoi de plus satisfaisant ?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ce que je recherche ? -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Ce que je recherche ?
+                            </button>
+                        </h3>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#introductionAccordion">
+                            <div class="accordion-body text-justify">
+                                <p>Je cherche une entreprise qui me donne une chance de montrer ce que je sais faire et
+                                    qui puisse m’accompagner dans le développement de mes compétences.</p>
+                                <p>Je suis ouvert à tout type de contrat : alternance, CDD ou CDI.</p>
+                                <p>L’idéal serait pour moi une entreprise située dans la région
+                                    <strong>Hauts-de-France</strong>, de préférence autour d’Amiens ou de Lille. Je
+                                    reste bien-sûr à l’écoute de toute proposition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pourquoi me recruter ? -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Pourquoi me recruter ?
+                            </button>
+                        </h3>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#introductionAccordion">
+                            <div class="accordion-body text-justify">
+                                <p>Je m’<strong>adapte</strong> à la fois aux personnes (du public enfant au public
+                                    senior), mais aussi aux situations : bugs techniques...
+                                </p>
+                                <p>Je suis <strong>autodidacte</strong>, j’apprends à coder en regardant la
+                                    documentation et des tutos afin d’accroître mes compétences.</p>
+                                <p>Je suis <strong>consciencieux</strong>, j’aime le travail bien fait. C’est à la fois
+                                    valorisant pour la personne qui reçoit que pour la personne qui donne.</p>
+                                <p>Je suis <strong>curieux</strong>, j’aime découvrir et apprendre des nouvelles choses
+                                    dans le développement web mais pas que. Découvrir de nouveaux lieux, de nouvelles
+                                    personnes, de nouvelles histoires, de nouveaux savoirs est pour moi quelquechose
+                                    d’important.</p>
+                                <p>Je suis <strong>motivé</strong>, j’ai quitté un contrat à durée indéterminée pour
+                                    poursuivre une passion : développeur web.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section class="container" id="skills">
+            <h2>Mes compétences</h2>
+            <div class="col-12 mx-auto text-center card card-body" id="skillsContainer">
+
+                <!-- Navigation des compétences -->
+                <div class="text-center">
+                    <div class="btn-group my-3" role="group" aria-label="Navigation des compétences">
+                        <button type="button" class="tab btn p-3 activeTab" data-animation="1">Langages /
+                            Moteurs</button>
+                        <button type="button" class="tab btn p-3" data-animation="2">Frameworks / CMS /
+                            Bibliothèques</button>
+                        <button type="button" class="tab btn p-3" data-animation="3">Logiciels / Sites internet</button>
+                        <button type="button" class="tab btn p-3" data-animation="4">Soft skills</button>
+                    </div>
+                </div>
+
+                <!-- Langages / Moteurs -->
+                <div class="flex items-center skillContents" data-animation="1">
+                    <h3 class="my-3">Langages / Moteurs</h3>
+                    <div class="icon-wrapper relative overflow-hidden inline-block">
+                        <div class="icon" style="animation-duration: 10s;">
+                            <figure>
+                                <img src="assets/img/skills/languages/html.png" alt="Icône HTML">
+                                <figcaption>HTML</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/languages/css.png" alt="Icône CSS">
+                                <figcaption>CSS</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/languages/sass.png" alt="Icône SASS">
+                                <figcaption>SASS (SCSS)</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/languages/js.png" alt="Icône JS">
+                                <figcaption>Javascript</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/languages/php.png" alt="Icône PHP">
+                                <figcaption>PHP</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/languages/mysql.png" alt="Icône MySQL">
+                                <figcaption>MySQL</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/languages/twig.png" alt="Icône TWIG">
+                                <figcaption>TWIG</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks / CMS / Bibliothèques -->
+                <div class="flex items-center skillContents d-none" data-animation="2">
+                    <h3 class="my-3">Framework / CMS / Bibliothèques</h3>
+                    <div class="icon-wrapper relative overflow-hidden inline-block">
+                        <div class="icon" style="animation-duration: 10s;">
+                            <figure>
+                                <img src="assets/img/skills/frameworks/blank.png" alt="Icône Vide">
+                                <figcaption class="text-white">Blank</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/frameworks/bootstrap.png" alt="Icône Bootstrap">
+                                <figcaption>Bootstrap</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/frameworks/jquery.png" alt="Icône JQuery">
+                                <figcaption>Jquery</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/frameworks/symfony.png" alt="Icône Symfony">
+                                <figcaption>Symfony</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/frameworks/wordpress.png" alt="Icône Wordpress">
+                                <figcaption>Wordpress</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/frameworks/blank.png" alt="Icône Vide">
+                                <figcaption class="text-white">Blank</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logiciels / Sites internet-->
+                <div class="flex items-center skillContents d-none" data-animation="3">
+                    <h3 class="my-3">Logiciels / Sites internet</h3>
+                    <div class="icon-wrapper relative overflow-hidden inline-block">
+                        <div class="icon" style="animation-duration: 15s;">
+                            <figure>
+                                <img src="assets/img/skills/software/adobexd.png" alt="Icône Adobe XD">
+                                <figcaption>Adobe XD</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/canva.png" alt="Icône Canva">
+                                <figcaption>Canva</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/excel.png" alt="Icône Excel">
+                                <figcaption>Excel</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/gimp.png" alt="Icône GIMP">
+                                <figcaption>GIMP</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/git.png" alt="Icône Git">
+                                <figcaption>Git</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/github.png" alt="Icône Github">
+                                <figcaption>Github</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/jmerise.png" alt="Icône JMerise">
+                                <figcaption>JMerise</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/powerpoint.png" alt="Icône Powerpoint">
+                                <figcaption>Powerpoint</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/trello.png" alt="Icône Trello">
+                                <figcaption>Trello</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/vscode.png" alt="Icône VS Code">
+                                <figcaption>VS Code</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/software/word.png" alt="Icône Word">
+                                <figcaption>Word</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft skills -->
+                <div class="flex items-center skillContents d-none" data-animation="4">
+                    <h3 class="my-3">Soft Skills</h3>
+                    <div class="icon-wrapper relative overflow-hidden inline-block">
+                        <div class="icon" style="animation-duration: 10s;">
+                            <figure>
+                                <img src="assets/img/skills/softSkills/adn.png" alt="Icône Adaptabilité">
+                                <figcaption>Adaptabilité</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/softSkills/autonomy.png" alt="Icône Autonomie">
+                                <figcaption>Autonomie</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/softSkills/share.png" alt="Icône Communication">
+                                <figcaption>Communication</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/softSkills/times.png"
+                                    alt="Icône Gestion d'un emploi du temps">
+                                <figcaption>Gestion d'un emploi du temps</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/softSkills/reflection.png"
+                                    alt="Icône Résolution de problèmes">
+                                <figcaption>Résolution de problèmes</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/img/skills/softSkills/work.png" alt="Icône Travail d'équipe">
+                                <figcaption>Travail en équipe</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Timeline -->
+        <section class="container-fluid" id="timeline">
+            <h2>Mon parcours</h2>
+            <div class="container py-5">
+                <div class="line">
+
+                    <!-- TP Développeur -->
+                    <div class="timeline left" data-aos="fade-right">
+                        <div class="card timeline-card">
+                            <div class="degree"></div>
+                            <div class="card-body p-4">
+                                <h3 class="fw-bold mb-2"><span class='bi bi-mortarboard-fill'></span> TP Développeur Web
+                                    &
+                                    Webmobile</h3>
+                                <p class="text-muted mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i></i>&nbsp; La Manu L'école du numérique, Noyon
+                                    (60)
+                                </p>
+                                <p class="text-muted mb-3"><i class="bi bi-calendar3"></i>&nbsp; 2021 - 2022</p>
+                                <p class="mb-3 text-justify">
+                                    "Cette formation permet d’acquérir les compétences
+                                    essentielles et fondamentales d’un développeur web. 6 mois pour apprendre un métier,
+                                    et
+                                    bénéficier d’une capacité opérationnelle immédiate." <i>La Manu</i>
+                                </p>
+                                <a class="btn btn-light-mauve" data-bs-toggle="modal" data-bs-target="#laManuModal">
+                                    Plus
+                                    d'informations</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal TP Développeur-->
+                    <div class="modal fade" id="laManuModal" tabindex="-1" aria-labelledby="laManuModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title mx-auto text-center">Titre Professionnel Développeur Web &
+                                        Webmobile</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h5 class="text-center mt-2">Module Développement Front-end</h5>
+                                        <ul>
+                                            <li>Apprentissage des langages Front-End (HTML, CSS, JS)</li>
+                                            <li>Maîtrise du développement d’un site Responsive</li>
+                                            <li>Conception centrée utilisateurs et UX Design</li>
+                                            <li>Maitrise du framework Bootstrap</li>
+                                            <li>Élaboration du cahier des charges d’un projet web</li>
+                                            <li>Création, personnalisation et administration d’un site WordPress
+                                            </li>
+                                            <li>Publication d’un site en ligne sur un serveur web (NDD, FTP)</li>
+                                        </ul>
+
+                                        <h5 class="text-center mt-5">Module Développement Back-end</h5>
+                                        <ul>
+                                            <li>Découverte de l’algorithmie</li>
+                                            <li>Apprentissage du langage PHP</li>
+                                            <li>Conception et mise en œuvre d’une base de données (SQL, Merise)</li>
+                                            <li>Développement de modules pour un site internet avec WordPress</li>
+                                            <li>Publication d’un site en ligne sur un serveur web (NDD, FTP)</li>
+                                        </ul>
+
+                                        <h5 class="text-center mt-5">Techniques et outils du développement web</h5>
+                                        <ul>
+                                            <li>Mise en pratique des techniques de référencement naturel (SEO)</li>
+                                            <li>Sécurisation d’un site web en utilisant les bonnes pratiques de la
+                                                cybersécurité</li>
+                                            <li>Sensibilisation aux enjeux de la conception d’un site
+                                                (Eco-conception)
+                                            </li>
+                                            <li>Réalisation d’une veille technologique</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light-mauve mx-auto"
+                                        data-bs-dismiss="modal">Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Animateur Social -->
+                    <div class="timeline right" data-aos="fade-left">
+                        <div class="card timeline-card">
+                            <div class="work"></div>
+                            <div class="card-body p-4">
+                                <h3 class="fw-bold mb-2"><i class="bi bi-briefcase-fill"></i> Animateur Social Numérique
+                                </h3>
+                                <p class="text-muted mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i></i>&nbsp; Centre Social et Culturel, Lassigny
+                                    (60)
+                                </p>
+                                <p class="text-muted mb-3"><i class="bi bi-calendar3"></i>&nbsp; 2019 - 2021</p>
+                                <ul class="mb-0">
+                                    <li>Evaluation des actions menées et rédaction des bilans d’activités</li>
+                                    <li>Gestion d'un site Wordpress</li>
+                                    <li>Initiation du public au numérique et sensibilisation aux risques informatiques
+                                    </li>
+                                    <li>Modernisation digitale de l'association</li>
+                                    <li>Montages photos et vidéos</li>
+                                    <li>Réalisation de tests pour la plateforme de dépôt numérique</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BPJEPS -->
+                    <div class="timeline left" data-aos="fade-right">
+                        <div class="card timeline-card">
+                            <div class="degree"></div>
+                            <div class="card-body p-4">
+                                <h3 class="fw-bold mb-2"><span class='bi bi-mortarboard-fill'></span> BPJEPS Animation
+                                    Sociale</h3>
+                                <p class="text-muted mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i></i>&nbsp; La Boîte Sans Projet, Amiens (80)
+                                </p>
+                                <p class="text-muted mb-3"><i class="bi bi-calendar3"></i>&nbsp; 2020</p>
+                                <ul class="mb-0">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service civique -->
+                    <div class="timeline right" data-aos="fade-left">
+                        <div class="card timeline-card">
+                            <div class="work"></div>
+                            <div class="card-body p-4">
+                                <h3 class="fw-bold mb-2"><i class="bi bi-briefcase-fill"></i> Service civique</h3>
+                                <p class="text-muted mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i></i>&nbsp; Centre Social et Culturel, Lassigny
+                                    (60)
+                                </p>
+                                <p class="text-muted mb-3"><i class="bi bi-calendar3"></i>&nbsp; 2018</p>
+                                <ul class="mb-0">
+                                    <li>Accompagnement des seniors dans leur utilisation de la tablette numérique</li>
+                                    <li>Réalisation de visites de convivialité</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FREDON -->
+                    <div class="timeline left" data-aos="fade-right">
+                        <div class="card timeline-card">
+                            <div class="work"></div>
+                            <div class="card-body p-4">
+                                <h3 class="fw-bold mb-2"><i class="bi bi-briefcase-fill"></i> Chargé d’études en Zone
+                                    Non Agricole</h3>
+                                <p class="text-muted mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i></i>&nbsp; FREDON Poitou-Charentes,
+                                    Mignaloux-Beauvoir (86)
+                                </p>
+                                <p class="text-muted mb-3"><i class="bi bi-calendar3"></i>&nbsp; 2017</p>
+                                <ul class="mb-0">
+                                    <li>Création de base de données Excel avec système de filtrage</li>
+                                    <li>Optimisation du process des études via macro Excel VBA </li>
+                                    <li>Organisation de réunions de travail avec les élus locaux</li>
+                                    <li>Réalisation de cartographies via MapInfo</li>
+                                    <li>Rédaction des plans d'entretien pour la gestion des espaces communaux</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Master -->
+                    <div class="timeline right" data-aos="fade-left">
+                        <div class="card timeline-card">
+                            <div class="degree"></div>
+                            <div class="card-body p-4">
+                                <h3 class="fw-bold mb-2"><span class='bi bi-mortarboard-fill'></span> Master Écosystèmes
+                                    Agrosystèmes et Développement Durable</h3>
+                                <p class="text-muted mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i></i>&nbsp; Université Picardie Jules Verne, Amiens
+                                    (80)
+                                </p>
+                                <p class="text-muted mb-3"><i class="bi bi-calendar3"></i>&nbsp; 2016</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio -->
+        <section class="container-fluid gtco-testimonials" id="portfolio">
+            <h2>Mon porfolio</h2>
+            <div class="owl-carousel owl-carousel1 owl-theme">
+
+                <!-- Galerie photos -->
+                <div class="card text-center"><img class="card-img-top" src="assets/img/projects/peleMele.jpg"
+                        alt="Image Galerie photos">
+                    <div class="card-body">
+                        <h3>Galerie photos</h3>
+                        <div class="mb-2">
+                            <span class="badge bg-html me-2">HTML</span>
+                            <span class="badge bg-css me-2">CSS</span>
+                            <span class="badge bg-js me-2">JS</span>
+                            <span class="badge bg-jquery me-2">JQuery</span>
+                            <span class="badge bg-bootstrap me-2">Bootstrap</span>
+                            <span class="badge bg-canva me-2">Canva</span>
+                        </div>
+                        <p class="card-text my-0">Nature et paysages vous attendent.</p>
+                        <p class="card-text">Prêt pour la découverte ?</p>
+                        <a href="https://maximiliengout.github.io/gallery/" target="_blank" class="my-0 btn btn-mauve">
+                            Voir la galerie</a>
+                    </div>
+                </div>
+
+                <!-- Guess the number -->
+                <div class="card text-center"><img class="card-img-top" src="assets/img/projects/guessthenumber.jpg"
+                        alt="Image Guess the Number">
+                    <div class="card-body">
+                        <h3>Guess the number</h3>
+                        <div class="mb-2">
+                            <span class="badge bg-html me-2">HTML</span>
+                            <span class="badge bg-css me-2">CSS</span>
+                            <span class="badge bg-js me-2">JS</span>
+                            <span class="badge bg-bootstrap me-2">Bootstrap</span>
+                            <span class="badge bg-canva me-2">Canva</span>
+                        </div>
+                        <p class="card-text my-0">3 niveaux de difficulté.</p>
+                        <p class="card-text">Réussirez-vous à trouver le nombre mystère ?</p>
+                        <a href="https://maximiliengout.github.io/guess_the_number/" target="_blank"
+                            class="my-0 btn btn-mauve">Jouer</a>
+                    </div>
+                </div>
+
+                <!-- Shifumi -->
+                <div class="card text-center"><img class="card-img-top" src="assets/img/projects/shifumi.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Shifumi Pokémon</h3>
+                        <div class="mb-2">
+                            <span class="badge bg-html me-2">HTML</span>
+                            <span class="badge bg-css me-2">CSS</span>
+                            <span class="badge bg-js me-2">JS</span>
+                            <span class="badge bg-bootstrap me-2">Bootstrap</span>
+                            <span class="badge bg-canva me-2">Canva</span>
+                        </div>
+                        <p class="card-text my-0">Bulbizarre, Salamèche ou Carapuce ?</p>
+                        <p class="card-text">Incarné Ash Ketchum et venez à bout de votre rival Gary Oak.</p>
+                        <a href="https://maximiliengout.github.io/shifumi_pokemon/" target="_blank"
+                            class="my-0 btn btn-mauve">Jouer</a>
+                    </div>
+                </div>
+
+                <!-- BGC -->
+                <div class="card text-center"><img class="card-img-top" src="assets/img/projects/bgc.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Board Game Community</h3>
+                        <div class="mb-2">
+                            <span class="badge bg-html me-2">HTML</span>
+                            <span class="badge bg-css me-2">CSS</span>
+                            <span class="badge bg-symfony me-2">Symfony</span>
+                            <span class="badge bg-twig me-2">Twig</span>
+                            <span class="badge bg-js me-2">JS</span>
+                            <span class="badge bg-bootstrap me-2">Bootstrap</span>
+                            <span class="badge bg-canva me-2">Canva</span>
+                        </div>
+                        <p class="card-text my-0">La communauté des jeux de société !</p>
+                        <p class="card-text">Donnez votre avis sur les jeux et gérez votre ludothèque !</p>
+                        <a class="btn btn-mauve" data-bs-toggle="modal" data-bs-target="#bgcModal">
+                            Plus d'informations</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal BGC-->
+            <div class="modal fade" id="bgcModal" tabindex="-1" aria-labelledby="bgcModal" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title mx-auto text-center">Board Game Community</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div>
+                                <h5 class="text-center mt-2">Résumé</h5>
+                                <p class="text-justify">Depuis quelques années, un engouement a été constaté autour des
+                                    jeux de société.
+                                    En 2020, le chiffre d’affaires français des jeux de société a bondi de 11%,
+                                    atteignant
+                                    les 360 millions d’euros. A tel point que l’on trouve désormais des cafés ludiques,
+                                    des
+                                    endroits pour jouer en famille ou entre amis.</p>
+                                <p class="text-justify">Dans cette multitude de jeux, il est parfois compliqué de s’y
+                                    retrouver. Des questions
+                                    se posent aux néophytes de cette chose ludique : Je débute, par quel jeu je dois
+                                    commencer ? Je cherche un jeu d’ambiance qui dure moins de 30 minutes, comment
+                                    trouver le bon ? J’ai vu un jeu mais, il est bien ? D’autres plus expérimentés et
+                                    qui
+                                    cumulent plusieurs centaines de jeux ont parfois du mal à s’y retrouver...</p>
+                                <p class="text-justify"> Passionné de numérique et de jeux de société, j’ai décidé de
+                                    combiner ces deux
+                                    passions et d’apporter une solution en créant un site où les utilisateurs trouveront
+                                    réponses à leurs interrogations.</p>
+
+                                <h5 class="text-center mt-2">Fonctionnalités principales</h5>
+                                <ul>
+                                    <li>Création, Affichage, Modification et Suppression d'un compte utilisateur</li>
+                                    <li>Ajout, Affichage, Modification et Suppression d'un jeu de société</li>
+                                    <li>Ajout et suppression d'un jeu dans la ludothèque d'un utilisateur</li>
+                                    <li>Ajout, Affichage, Modification et Suppression de l'avis d'un utilisateur</li>
+                                    <li>Filtrage des jeux en fonction de critères (durée, nombre de joueurs...)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-mauve mx-auto" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="container-fluid" id="contact">
+            <h2>Contact</h2>
+            <div class="cards-list row p-0 m-0">
+
+                <div class="card col-md-2 my-3 col-5">
+                    <a href="tel:+33678071858" target="_blank">
+                        <img id="phone" src="assets/img/contact/phone.jpg" alt="Icône Téléphone" title="M'appeler">
+                    </a>
+                </div>
+
+                <div class="card col-md-2 my-3 col-5">
+                    <a href="mailto:maximiliengout@laposte.net" target="_blank">
+                        <img id="mail" src="assets/img/contact/mail.jpg" alt="Icône Mail" title="M'envoyer un mail">
+                    </a>
+                </div>
+
+                <div class="card col-md-2 my-3 col-5">
+                    <a href="https://www.linkedin.com/in/maximiliengout/" target="_blank">
+                        <img id="linkedIn" src="assets/img/contact/linkedIn.jpg" alt="Icône LinkedIn"
+                            title="Se connecter sur LinkedIn">
+                    </a>
+                </div>
+
+                <div class="card col-md-2 my-3 col-5">
+                    <a href="assets/doc/CV_Maximilien_Gout.pdf" target="_blank">
+                        <img id="cv" src="assets/img/contact/cv.jpg" alt="Icône CV" title="Télécharger mon CV">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="mt-3 bg-light text-center text-white">
+            <div class="text-center bottomFooter p-3">
+                © 2022 Copyright:
+                <a class="text-white" href="https://maximiliengout.github.io/">Maximilien Gout</a>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- Scripts -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Script de la page -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

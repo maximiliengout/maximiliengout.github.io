@@ -1,0 +1,20 @@
+/**********
+* Introduction
+***********/
+
+// Stylisation du hearder actif
+.accordion-button:not(.collapsed) {
+    background-color: $primary;
+    color: #fff;
+}
+// Stylisation du hearder passif
+.accordion-button {
+    color: $primary;
+}
+
+// Photo de profil
+.pictureProfile {
+    border-radius: 51px;
+    border: 10px solid $primary;
+    width: 100%;
+}

@@ -1,0 +1,147 @@
+/*********
+* Timeline
+*********/
+
+// Ligne vertical
+.line {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background-color: #3f51b5;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+}
+
+//Container autour du contenu
+.timeline {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    // Cercle sur la ligne
+    &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -11px;
+        background-color: #3f51b5;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+// Place le contenair à gauche
+.left {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+    // Ajoute des flèches pointant vers la droite
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 18px;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+    }
+}
+
+// Place le contenair à droite
+.right {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+    // Ajoute des flèches pointant vers la gauche
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 18px;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    // Place le cercle pour les conteneurs sur le côté droit
+    &::after {
+        left: -14px;
+    }
+}
+
+// Card
+.timeline-card {
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    transition: 0.4s;
+    &:hover {
+        transform: scale(1.03, 1.03);
+        box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), 5px 5px 30px 15px rgba(0, 0, 0, 0.22);
+    }
+}
+
+// Couleur du bandeau pour les diplômes
+.degree {
+    height: 51px;
+    background-color: $light-primary;
+    border-radius: 20px 20px 0 0;
+}
+// Couleur du bandeau pour les jobs
+.work {
+    height: 51px;
+    background-color: $primary;
+    border-radius: 20px 20px 0 0;
+}
+
+// Modal descriptive de la Manu
+#laManuModal {
+    .modal-header {
+        background-color: $light-primary;
+        color: $text;
+    }
+    // Remplace les puces avec des losanges
+    li::before {
+        content: "⬪ ";
+        color: $primary;
+        text-align: justify;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
+// Media queries - Timeline responsive pour les écrans de moins de 768px
+@media screen and (max-width: 768px) {
+    // Place la ligne à gauche
+    .line::after {
+        left: 31px;
+    }
+    // Les containers prennent toute la place
+    .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        /* Toutes les flèches pointent vers la gauche */
+        &::before {
+            left: 60px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+    }
+    /* Tous les cercles sont à la même distance du bord */
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+    .left::before {
+        right: auto;
+    }
+    /* Tous les conteneurs se place à gauche */
+    .right {
+        left: 0%;
+    }
+}

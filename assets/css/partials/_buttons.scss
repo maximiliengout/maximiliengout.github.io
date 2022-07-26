@@ -1,0 +1,23 @@
+/********
+* Boutons
+********/
+
+.btn-mauve {
+    background-color: $primary;
+    color: white;
+    &:hover {
+        color: $primary;
+        transform: scale(1.03, 1.03);
+        cursor: pointer;
+    }
+}
+
+.btn-light-mauve {
+    background-color: $light-primary;
+    color: white;
+    &:hover {
+        color: $light-primary;
+        transform: scale(1.03, 1.03);
+        cursor: pointer;
+    }
+}

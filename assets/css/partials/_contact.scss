@@ -1,0 +1,25 @@
+/********
+* Contact
+********/
+
+#contact {
+    // Stylisation des cards
+    .card {
+        aspect-ratio: 1/1;
+        margin: auto;
+        border-radius: 40px;
+        box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            transform: scale(0.9, 0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+        }
+    }
+    // Stylisation de l'image de la card
+    img {
+        border-radius: 40px;
+        width: 100%;
+        height: 100%;
+    }
+}
