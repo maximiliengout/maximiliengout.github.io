@@ -201,9 +201,21 @@
             <h2>Mes compétences</h2>
             <div class="col-12 mx-auto text-center card card-body" id="skillsContainer">
 
-                <!-- Navigation des compétences -->
+                <!-- Navigation des compétences "Grand écran" -->
                 <div class="text-center">
-                    <div class="btn-group my-3" role="group" aria-label="Navigation des compétences">
+                    <div class="btn-group d-md-flex d-none my-3" role="group" aria-label="Navigation des compétences">
+                        <button type="button" class="tab btn p-3 activeTab" data-animation="1">Langages /
+                            Moteurs</button>
+                        <button type="button" class="tab btn p-3" data-animation="2">Frameworks / CMS /
+                            Bibliothèques</button>
+                        <button type="button" class="tab btn p-3" data-animation="3">Logiciels / Sites internet</button>
+                        <button type="button" class="tab btn p-3" data-animation="4">Soft skills</button>
+                    </div>
+                </div>
+
+                <!-- Navigation des compétences "Responsive" -->
+                <div class="text-center">
+                    <div class="btn-group-vertical d-md-none d-flex my-3" role="group" aria-label="Navigation des compétences">
                         <button type="button" class="tab btn p-3 activeTab" data-animation="1">Langages /
                             Moteurs</button>
                         <button type="button" class="tab btn p-3" data-animation="2">Frameworks / CMS /
