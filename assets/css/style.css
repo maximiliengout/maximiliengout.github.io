@@ -433,6 +433,10 @@ section {
   background-color: #1c6ea4;
 }
 
+.bg-gimp {
+  background-color: #625b47;
+}
+
 .bg-html {
   background-color: #ce5937;
 }
@@ -443,6 +447,10 @@ section {
 
 .bg-js {
   background-color: #f7e018;
+}
+
+.bg-tailwindcss {
+  background-color: #07b6d5;
 }
 
 .bg-twig {
